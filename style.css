@@ -1,0 +1,224 @@
+*{
+  margin: 0 ;
+  box-sizing: border-box;
+}
+main{
+  padding: 2em;
+}
+header{
+  background-image: url(images/bg-header-desktop.png);
+  padding: 2em;
+}
+.copyright-logo{
+  width: 12%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+h1{
+  color: hsl(210, 10%, 33%);
+  font-size: 1.5rem;
+}
+p{
+  margin-top: .55em;
+  color: hsl(201, 11%, 66%);
+  font-size: .75rem;
+  line-height: 1.8em;
+}
+.button-div{
+  margin-top: 1.7em;
+}
+button{
+  color: white;
+  border: none;
+  padding: 1em 1.7em .7em 1.7em;
+  border-radius: 20px;
+  font-size: .65rem;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, width 0 .25s;
+  transition-timing-function: ease-out;
+  }
+.ios{
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: hsl(170, 60%, 40%) 1.95px 1.95px 2.6px;
+}
+.ios:active{
+  background-color: white;
+  color: hsl(171, 66%, 44%);
+  width: 17em;
+}
+.mac{
+  margin-left: 1em;
+  background-color:hsl(233, 100%, 69%) ;
+  box-shadow: hsl(230, 100%, 69%) 1.95px 1.95px 2.6px;
+ 
+}
+.mac:active{
+  background-color: white;
+  color: hsl(233, 100%, 69%);
+  width: 17em;
+} 
+h2{
+  color:  hsl(210, 10%, 33%);
+  font-size: 1.3rem;
+}
+.computer-section{
+display: flex;
+margin-top: 3em;
+justify-content: space-between;
+}
+.computer-device-content{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3em;
+}
+.computer-image{
+  width: 50%;
+  object-fit: contain;
+  margin-left: -2em;
+}
+.f-a{
+  margin-top: 3em;
+}
+.f-b{
+  margin-bottom: 2em;
+}
+.device-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5em;
+}
+.device-image{
+  width: 50%;
+  margin-top: 4em;
+}
+.device-content{
+  display: flex;
+  margin-top: 2.5em;
+}
+h3{
+  margin-top: 1em;
+}
+.f-d{
+  text-align: center;
+}
+.logo-div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+.logo{
+  width: 15%;
+  object-fit: contain;
+}
+.f-e{
+  margin-top: 4.5em;
+}
+.f-f{
+  margin-top: 2em;
+  margin-bottom: 3.5em;
+}
+.footer-logo{
+  width: 5%;
+  object-fit: contain;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  rgb(211, 211, 211);
+  padding: 1em 3em;
+  font-size: .75rem;
+ 
+}
+.social-icon{
+  margin-left: .65em;
+  cursor: pointer;
+  transition: fill 0.15s;
+}
+.social-icon :active {
+  background-color: hsl(171, 66%, 44%) ;
+ border-radius: 5px;
+}
+li{
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+li:active {
+  color: hsl(171, 66%, 44%);
+}
+ul{
+  list-style: none;
+}
+
+@media only screen and (max-width:480px){
+ main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ h1{
+  text-align: center;
+ }
+ p{
+  text-align: center;
+ }
+ .copyright-logo{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.computer-section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.computer-device-content{
+  margin-left: 0;
+  text-align: center;
+}
+
+.device-content{
+  flex-direction: column;
+}
+.f-h{
+  margin-top: 1em;
+}
+.logo-div{
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+  margin-bottom: 2em;
+  width: 30%;
+  object-fit: contain;
+}
+.footer{
+  flex-direction: column;
+}
+.footer-logo{
+  width: 10%;
+  margin-bottom: .75em;
+}
+li{
+  margin-bottom:.55em ;
+}
+}
+@media only screen and (max-width:375px){
+  header{
+    background-image: url(images/bg-header-mobile.png);
+  }
+}
